@@ -1,7 +1,7 @@
 import React from "react";
 import { ClassCoinFlip } from "../component/ClassCoinFlip";
 import { CoinFlip } from "../component/CoinFlip";
-import { Random } from "../random_component/Random";
+import { Random } from "../component/Random";
 
 export const HomePage = () => {
   return (
