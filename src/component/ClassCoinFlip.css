@@ -1,0 +1,23 @@
+.ClassCoinFlip #coin {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: relative;
+}
+
+.ClassCoinFlip .tail {
+  background-color: red;
+  text-align: center;
+  color: white;
+}
+.ClassCoinFlip .head {
+  background-color: green;
+  text-align: center;
+  color: white;
+}
+.ClassCoinFlip h2 {
+  font-family: "Times New Roman", Times, serif;
+}
+.ClassCoinFlip #coin_btn {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
