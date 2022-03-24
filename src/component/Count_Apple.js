@@ -3,7 +3,7 @@ import "./CoinFlip.css";
 
 export const Count_Apple = () => {
     const counter = React.useRef(0);
-    const [countApple, setCountApple] = useState("");
+    const [countApple, setCountApple] = useState(0);
     const Add = () => {
         counter.current = counter.current + 1;
         // setCountApple(counter.current);
