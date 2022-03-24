@@ -3,6 +3,7 @@ import { Count_Apple } from "../component/Count_Apple";
 import { ClassCoinFlip } from "../component/ClassCoinFlip";
 import { CoinFlip } from "../component/CoinFlip";
 import { Random } from "../component/Random";
+import { TextMirror } from "../component/TextMirror";
 
 export const HomePage = () => {
   return (
@@ -15,6 +16,8 @@ export const HomePage = () => {
       <Random/>
       <hr/>
       <Count_Apple/>
+      <hr/>
+      <TextMirror/>
     </div>
   );
 };

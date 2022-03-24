@@ -24,6 +24,7 @@ export const Count_Apple = () => {
             </div>
             <div>
                 <p>The number is: {countApple % 2 == 0 ? "EVEN" : "ODD"}</p>
+                
             </div>
         </div>
     )
