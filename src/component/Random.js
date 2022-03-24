@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "./CoinFlip";
+import "./CoinFlip.css";
 
 export const Random = () => {
     const [minVal, setMinVal] = useState();

@@ -58,3 +58,8 @@
     font-size: 15px;
     cursor: pointer;
 }
+/* Count Apple */
+.CountApple button{
+  margin-bottom: 20px;
+  padding: 10px 10px;
+}
