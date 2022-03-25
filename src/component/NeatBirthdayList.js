@@ -26,7 +26,7 @@ export const NeatBirthdayList = () => {
     })
 
     return (
-        <div className='Neat_Birthday'>
+        <div className='NeatBirthday'>
             <h1>The Neat Birthday List</h1>
             <div>
                 {show}

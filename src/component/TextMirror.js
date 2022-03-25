@@ -7,7 +7,7 @@ export const TextMirror = () => {
     }
 
     return (
-        <div className='Text_Mirror'>
+        <div className='TextMirror'>
             <h1>The Text Mirror</h1>
             <div>
                 <input type="text"

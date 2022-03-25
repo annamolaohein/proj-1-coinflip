@@ -65,13 +65,15 @@
 }
 
 /* The Text Mirror */
-.Text_Mirror input {
+.TextMirror input {
   margin-bottom: 20px;
 }
 
 /* The Neat Birthday List */
 
-.Neat_Birthday li {
+.NeatBirthday li {
   text-align: left;
   margin-left: 45%;
 }
+
+

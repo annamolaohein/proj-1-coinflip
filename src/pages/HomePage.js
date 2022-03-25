@@ -1,10 +1,11 @@
 import React from "react";
-import { Count_Apple } from "../component/Count_Apple";
+import { CountApple } from "../component/CountApple";
 import { ClassCoinFlip } from "../component/ClassCoinFlip";
 import { CoinFlip } from "../component/CoinFlip";
 import { Random } from "../component/Random";
 import { TextMirror } from "../component/TextMirror";
 import { NeatBirthdayList } from "../component/NeatBirthdayList";
+import { DisplayEditList } from "../component/DisplayEditList";
 
 export const HomePage = () => {
   return (
@@ -16,11 +17,13 @@ export const HomePage = () => {
       <hr/>
       <Random/>
       <hr/>
-      <Count_Apple/>
+      <CountApple/>
       <hr/>
       <TextMirror/>
       <hr/>
       <NeatBirthdayList/>
+      <hr/>
+      <DisplayEditList/>
     </div>
   );
 };
