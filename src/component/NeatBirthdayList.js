@@ -1,5 +1,4 @@
-import userEvent from '@testing-library/user-event';
-import React, { useState } from 'react'
+
 import "./CoinFlip.css"
 
 export const NeatBirthdayList = () => {
@@ -11,18 +10,11 @@ export const NeatBirthdayList = () => {
     const show = BIRTHDAYS.map(({ name, birthday }) => {
 
         name = name.charAt(0).toLocaleUpperCase() + name.slice(1).toLowerCase();
-        if (birthday === null || birthday === "") {
-
-            birthday = "unknown";
-            return (
-                <li>{`${name} ( ${birthday} ) `}</li>
-            )
-        }
-        else
-            // console.log(`${name} ( ${birthday} )`);
-            return (
-                <li>{`${name} ( ${birthday} ) `}</li>
-            )
+        return (
+            <li>
+                {name} ({birthday || "unknown"})
+            </li>
+        )
     })
 
     return (

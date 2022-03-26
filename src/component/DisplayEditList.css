@@ -1,0 +1,20 @@
+.DisplayEditList .taskInput {
+    outline: none;
+    padding: 15px;
+    margin-right: 25px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid #c89666;
+  }
+  .DisplayEditList .btnAdd {
+    width: 70px;
+    padding: 10px 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #f1af71;
+    cursor: pointer;
+  }
+.DisplayEditList li:hover{
+  color: red;
+
+}
