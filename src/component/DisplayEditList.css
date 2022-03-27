@@ -14,7 +14,9 @@
     background-color: #f1af71;
     cursor: pointer;
   }
+
 .DisplayEditList li:hover{
   color: red;
+  background-color: #c89666;
 
 }
