@@ -14,8 +14,10 @@ export const DisplayEditList = () => {
     setAddLists(e.target.value);
   };
 
-  const removeItem = (index) => {
-    setShowList(showList.slice(0, index).concat(showList.slice(index + 1)))
+  const removeItem = (delItem) => {
+    setShowList(showList.slice(0, delItem).concat(showList.slice(delItem + 1)))
+ 
+
   }
   const addList = (newList) => {
     setShowList([...showList, newList])
@@ -40,10 +42,10 @@ export const DisplayEditList = () => {
       <div>
         <h3>Show Array Lists</h3>
         {
-          showList.map((list, index) => (
+          showList.map((list, delItem) => (
             <li
               className='itemList'
-              onClick={() => removeItem(index)}
+              onClick={() => removeItem(delItem)}
             >
               <span className="list-item-content">{list}</span>
             </li>
