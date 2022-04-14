@@ -9,7 +9,8 @@ export const CoinFlip = () => {
   };
   return (
     <div className="CoinFlip">
-      <h1>Function Component CoinFlip</h1>
+      {/* <h1>Function Component CoinFlip</h1> */}
+      <h1>CoinFlip</h1>
       <div id="coin">
         <div className={coin === "TAIL" ? "tail" : "head"}>
           <h2>{coin}</h2>

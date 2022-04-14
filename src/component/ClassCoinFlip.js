@@ -1,5 +1,5 @@
 import React from "react";
-import "./ClassCoinFlip.css";
+// import "./ClassCoinFlip.css";
 
 export class ClassCoinFlip extends React.Component {
   constructor(props) {
