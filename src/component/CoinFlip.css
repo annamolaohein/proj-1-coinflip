@@ -1,11 +1,11 @@
-.CoinFlip #coin {
+/* .CoinFlip #coin {
   width: 100px;
   height: 100px;
   margin: auto;
   position: relative;
-}
+} */
 
-.CoinFlip .tail {
+/* .CoinFlip .tail {
   background-color: red;
   text-align: center;
   color: white;
@@ -14,13 +14,13 @@
   background-color: green;
   text-align: center;
   color: white;
-}
-.CoinFlip h2 {
+} */
+/* .CoinFlip h2 {
   font-family: "Times New Roman", Times, serif;
 }
 .CoinFlip #coin_btn {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
+} */
 
 /* Random in Range */
 
