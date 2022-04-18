@@ -17,6 +17,7 @@ export const HomePage = () => {
   return (
 
     <div className="HomePage">
+
       {/* <EmotionTest/> */}
       <H1>Home Page</H1>
       {/* <ClassCoinFlip />
