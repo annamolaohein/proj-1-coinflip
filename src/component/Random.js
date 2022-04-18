@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import "./CoinFlip.css";
+// import "./CoinFlip.css";
+import styled from '@emotion/styled';
 
 export const Random = () => {
     const [minVal, setMinVal] = useState();
@@ -11,9 +12,9 @@ export const Random = () => {
     }
 
     return (
-        <div className='RangeRandom'>
+        <Div className='RangeRandom'>
             <div className='outer'>
-            <h1>Random in Range</h1>
+                <h1>Random in Range</h1>
                 <div className={`show_random ${(randomNum === minVal || randomNum === maxVal) && "bold-text"
                     }`}>
                     <p>Random Number is: {randomNum}</p>
@@ -37,12 +38,46 @@ export const Random = () => {
                     </div>
                 </div>
 
-                <button onClick={() => setRandomNum(randomBetween(minVal, maxVal))}
+                <button id='btn' onClick={() => setRandomNum(randomBetween(minVal, maxVal))}
                     disabled={!minVal || !maxVal || maxVal <= minVal}>
                     Generate Random Number</button>
             </div>
 
-        </div>
+        </Div>
     )
 }
 
+const Div = styled.div`
+  width: 50%;
+  margin-left: 25%;
+  background: #e3eff3;
+  display: flex;
+ 
+ .outer{
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+ }
+ .bold-text {
+  font-weight: 800;
+ }
+  .inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  width: 100%;
+  & input{
+    padding: 8px;
+}
+}
+
+#btn{
+  padding: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+`

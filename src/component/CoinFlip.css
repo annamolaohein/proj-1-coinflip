@@ -24,32 +24,32 @@
 
 /* Random in Range */
 
-.RangeRandom {
+/* .RangeRandom {
   width: 100%;
   background: #e3eff3;
   display: flex;
-}
+} */
 
-.RangeRandom .outer {
+/* .RangeRandom .outer {
   width: 100%;
   max-width: 400px;
   margin: auto;
   padding: 30px;
   display: flex;
   flex-direction: column;
-}
+} */
 
-.RangeRandom .bold-text {
+/* .RangeRandom .bold-text {
   font-weight: 800;
-}
-.RangeRandom .outer .inner {
+} */
+/* .RangeRandom .outer .inner {
   display: flex;
   justify-content: space-between;
   padding: 30px 0;
   width: 100%;
-}
+} */
 
-.RangeRandom .outer .inner div input {
+/* .RangeRandom .outer .inner div input {
   padding: 8px;
 }
 .RangeRandom .outer button {
@@ -57,7 +57,7 @@
   font-weight: bold;
   font-size: 15px;
   cursor: pointer;
-}
+} */
 /* Count Apple */
 .CountApple button {
   margin-bottom: 20px;
