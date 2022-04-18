@@ -1,11 +1,10 @@
 import React from "react";
-import { CountApple } from "../component/CountApple";
-// import { ClassCoinFlip } from "../component/ClassCoinFlip";
-import { CoinFlip } from "../component/CoinFlip";
-import { Random } from "../component/Random";
-import { TextMirror } from "../component/TextMirror";
-import { NeatBirthdayList } from "../component/NeatBirthdayList";
-import { DisplayEditList } from "../component/DisplayEditList";
+// import { CountApple } from "../component/CountApple";
+// import { CoinFlip } from "../component/CoinFlip";
+// import { Random } from "../component/Random";
+// import { TextMirror } from "../component/TextMirror";
+// import { NeatBirthdayList } from "../component/NeatBirthdayList";
+// import { DisplayEditList } from "../component/DisplayEditList";
 import styled from '@emotion/styled'
 // import { EmotionTest } from "../component/EmotionTest";
 
