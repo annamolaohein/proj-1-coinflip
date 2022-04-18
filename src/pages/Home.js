@@ -7,11 +7,13 @@ import { TextMirror } from "../component/TextMirror";
 import { NeatBirthdayList } from "../component/NeatBirthdayList";
 import { DisplayEditList } from "../component/DisplayEditList";
 import styled from '@emotion/styled'
+import { HomePage } from './HomePage';
 
 function Home() {
   return (
    <Router>
         <DIV>
+      
             <Link exact to="/" className='home'>Home</Link>
             <NavLink exact activeClassName='active' to='/coin' className='home'>Coin Flip</NavLink>
             <NavLink exact activeClassName='active' to='/random' className='home'>Random in Range</NavLink>
@@ -21,7 +23,7 @@ function Home() {
             <NavLink exact activeClassName='active' to='/display' className='home'>Display & Edit List</NavLink>
             <hr/>
             <Routes>
-                {/* <Route exact path='/' element={<Home/>}/> */}
+                <Route exact path='/' element={<HomePage/>}/>
                 <Route exact path='/coin'  element={<CoinFlip/>}/>
                 <Route exact path='/random' element={<Random/>}/>
                 <Route exact path='/counting' element={<CountApple/>}/>
@@ -42,5 +44,6 @@ export default Home
 const DIV = styled.div`
 .home{
     padding-right: 20px;
-}`
+}
+`
 
