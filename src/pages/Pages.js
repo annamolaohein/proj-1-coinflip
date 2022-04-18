@@ -9,17 +9,16 @@ import { DisplayEditList } from "../component/DisplayEditList";
 import styled from '@emotion/styled'
 import { HomePage } from './HomePage';
 
-function Home() {
+function Pages() {
   return (
    <Router>
         <DIV>
-      
             <Link exact to="/" className='home'>Home</Link>
             <NavLink exact activeClassName='active' to='/coin' className='home'>Coin Flip</NavLink>
             <NavLink exact activeClassName='active' to='/random' className='home'>Random in Range</NavLink>
             <NavLink exact activeClassName='active' to='/counting' className='home'>Counting Apples</NavLink>
             <NavLink exact activeClassName='active' to='/textMirror' className='home'>Text Mirror</NavLink>
-            <NavLink exact activeClassName='active' to='/neatBirthday' className='home'>Next Birthday List</NavLink>
+            <NavLink exact activeClassName='active' to='/neatBirthday' className='home'>Neat Birthday List</NavLink>
             <NavLink exact activeClassName='active' to='/display' className='home'>Display & Edit List</NavLink>
             <hr/>
             <Routes>
@@ -39,7 +38,7 @@ function Home() {
   )
 }
 
-export default Home
+export default Pages
 
 const DIV = styled.div`
 .home{

@@ -14,10 +14,9 @@ export const HomePage = () => {
 
     <div className="HomePage">
 
-      {/* <EmotionTest/> */}
+     
       <H1>Home Page</H1>
-      {/* <ClassCoinFlip /> */}
-      <hr /> 
+      {/* <hr /> 
       <CoinFlip />
       <hr />
       <Random />
@@ -28,17 +27,8 @@ export const HomePage = () => {
       <hr />
       <NeatBirthdayList />
       <hr />
-      <DisplayEditList />
+      <DisplayEditList /> */}
 
-    {/* //  <button>
-
-    //     Flip Coin
-    //   </button>
-    //   <button>Random in Range</button>
-    //   <button>Counting Apples</button>
-    //   <button>Text Mirror</button>
-    //   <button>Neat Birthday List</button>
-    //   <button>Display & Edit List</button>  */}
     </div>
 
 
