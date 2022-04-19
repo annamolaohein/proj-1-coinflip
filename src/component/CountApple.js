@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import "./CoinFlip.css";
+import "./CountApple.css";
 
 export const CountApple = () => {
 

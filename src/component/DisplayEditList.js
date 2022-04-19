@@ -5,7 +5,6 @@ import "./DisplayEditList.css"
 export const DisplayEditList = () => {
 
   const displayArray = ["a", "b", "c", "d", "e"];
-
   const [showList, setShowList] = useState(displayArray);
   const [addLists, setAddLists] = useState();
 

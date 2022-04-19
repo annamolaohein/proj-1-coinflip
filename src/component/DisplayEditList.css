@@ -1,22 +1,33 @@
+
 .DisplayEditList .taskInput {
     outline: none;
     padding: 15px;
     margin-right: 25px;
     font-size: 15px;
     border-radius: 10px;
-    border: 1px solid #c89666;
+    border: 1px solid #008b8b;
   }
   .DisplayEditList .btnAdd {
     width: 70px;
     padding: 10px 10px;
     font-size: 15px;
     border-radius: 10px;
-    background-color: #f1af71;
+    background-color: #008b8b;
     cursor: pointer;
+  }
+  .DisplayEditList .itemList{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #004545;
+    margin-bottom: 1rem;
+    padding: 2px;
+    border-radius: 0.5rem;
+    margin-left: 25%;
   }
 
 .DisplayEditList li:hover{
   color: red;
-  background-color: #c89666;
+  background-color: #7fc5c5;
 
 }

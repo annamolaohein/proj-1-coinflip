@@ -1,0 +1,14 @@
+.CountApple button {
+    margin-bottom: 20px;
+    padding: 10px 10px;
+  }
+  .CountApple{
+    width: 350px;
+    min-height: 200px;
+    background-color: #66b9b9;
+    color: black;
+    border: 1px solid white;
+    padding:  auto;
+     margin: auto;
+    text-align: center;
+  }

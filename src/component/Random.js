@@ -50,7 +50,8 @@ export const Random = () => {
 const Div = styled.div`
   width: 50%;
   margin-left: 25%;
-  background: #e3eff3;
+  /* background: #e3eff3; */
+  background: #66b9b9;
   display: flex;
  
  .outer{

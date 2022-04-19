@@ -12,8 +12,6 @@ export const HomePage = () => {
   return (
 
     <div className="HomePage">
-
-     
       <H1>Home Page</H1>
       {/* <hr /> 
       <CoinFlip />
@@ -27,10 +25,7 @@ export const HomePage = () => {
       <NeatBirthdayList />
       <hr />
       <DisplayEditList /> */}
-
     </div>
-
-
   );
 };
 

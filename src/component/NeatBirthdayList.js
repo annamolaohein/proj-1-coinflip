@@ -1,5 +1,5 @@
 
-import "./CoinFlip.css"
+import "./NeatBirthdayList.css"
 
 export const NeatBirthdayList = () => {
     const BIRTHDAYS = [{ name: "CarL", birthday: "Feb 2" },

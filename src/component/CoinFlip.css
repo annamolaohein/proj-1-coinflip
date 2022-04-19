@@ -59,21 +59,12 @@
   cursor: pointer;
 } */
 /* Count Apple */
-.CountApple button {
-  margin-bottom: 20px;
-  padding: 10px 10px;
-}
 
 /* The Text Mirror */
-.TextMirror input {
-  margin-bottom: 20px;
-}
+
 
 /* The Neat Birthday List */
 
-.NeatBirthday li {
-  text-align: left;
-  margin-left: 45%;
-}
+
 
 
