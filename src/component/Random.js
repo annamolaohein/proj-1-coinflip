@@ -53,6 +53,7 @@ const Div = styled.div`
   /* background: #e3eff3; */
   background: #66b9b9;
   display: flex;
+  margin-top: 2%;
  
  .outer{
   width: 100%;

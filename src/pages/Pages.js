@@ -8,21 +8,25 @@ import { NeatBirthdayList } from "../component/NeatBirthdayList";
 import { DisplayEditList } from "../component/DisplayEditList";
 import styled from '@emotion/styled'
 import { HomePage } from './HomePage';
+// import EmotionTest from '../component/EmotionTest';
 
 function Pages() {
   return (
    <Router>
         <DIV>
             <Link exact to="/" className='home'>Home</Link>
+            {/* <NavLink exact activeClassName='active' to='/emotion' className='home'>Emotion Test</NavLink> */}
             <NavLink exact activeClassName='active' to='/coin' className='home'>Coin Flip</NavLink>
             <NavLink exact activeClassName='active' to='/random' className='home'>Random in Range</NavLink>
             <NavLink exact activeClassName='active' to='/counting' className='home'>Counting Apples</NavLink>
             <NavLink exact activeClassName='active' to='/textMirror' className='home'>Text Mirror</NavLink>
             <NavLink exact activeClassName='active' to='/neatBirthday' className='home'>Neat Birthday List</NavLink>
             <NavLink exact activeClassName='active' to='/display' className='home'>Display & Edit List</NavLink>
-            <hr/>
+            {/* <hr/> */}
             <Routes>
+                
                 <Route exact path='/' element={<HomePage/>}/>
+                {/* <Route exact path='/emotion' element={<EmotionTest/>}/> */}
                 <Route exact path='/coin'  element={<CoinFlip/>}/>
                 <Route exact path='/random' element={<Random/>}/>
                 <Route exact path='/counting' element={<CountApple/>}/>
@@ -41,6 +45,7 @@ function Pages() {
 export default Pages
 
 const DIV = styled.div`
+padding-top: 10px;
 .home{
     padding-right: 20px;
 }

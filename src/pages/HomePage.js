@@ -1,30 +1,31 @@
 import React from "react";
-// import { CountApple } from "../component/CountApple";
-// import { CoinFlip } from "../component/CoinFlip";
-// import { Random } from "../component/Random";
-// import { TextMirror } from "../component/TextMirror";
-// import { NeatBirthdayList } from "../component/NeatBirthdayList";
-// import { DisplayEditList } from "../component/DisplayEditList";
+import { CountApple } from "../component/CountApple";
+import { CoinFlip } from "../component/CoinFlip";
+import { Random } from "../component/Random";
+import { TextMirror } from "../component/TextMirror";
+import { NeatBirthdayList } from "../component/NeatBirthdayList";
+import { DisplayEditList } from "../component/DisplayEditList";
 import styled from '@emotion/styled'
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react';
 // import { EmotionTest } from "../component/EmotionTest";
 
 export const HomePage = () => {
   return (
 
-    <div className="HomePage">
+    <div css={css({marginTop: '3%',})}>
       <H1>Home Page</H1>
-      {/* <hr /> 
       <CoinFlip />
-      <hr />
+      {/* <hr /> */}
       <Random />
-      <hr />
+      {/* <hr /> */}
       <CountApple />
-      <hr />
+      {/* <hr /> */}
       <TextMirror />
-      <hr />
+      {/* <hr /> */}
       <NeatBirthdayList />
-      <hr />
-      <DisplayEditList /> */}
+      {/* <hr /> */}
+      <DisplayEditList />
     </div>
   );
 };
@@ -34,4 +35,5 @@ const H1 = styled.h1`
 text-decoration: underline overline;
 text-decoration-color: rgba(255, 99, 71, 0.8);
 text-underline-position: under;
-color: rgba(60,60,60);`
+color: rgba(60,60,60);
+margin-bottom: 40px;`

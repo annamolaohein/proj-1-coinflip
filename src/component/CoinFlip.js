@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./CoinFlip.css";
+// import "./CoinFlip.css";
 import styled from "@emotion/styled";
 
 export const CoinFlip = () => {
@@ -11,29 +11,7 @@ export const CoinFlip = () => {
   };
   return (
     <Div className="CoinFlip">
-      {/* <style>
-        {
-          `
-            .CoinFlip #coin {
-              width: 100px;
-              height: 100px;
-              margin: auto;
-              position: relative;
-            }
-            .CoinFlip .tail {
-              background-color: red;
-              text-align: center;
-              color: white;
-            }
-            .CoinFlip .head {
-              background-color: green;
-              text-align: center;
-              color: white;
-            }
-            `
-        }
-      </style> */}
-      {/* <h1>Function Component CoinFlip</h1> */}
+
       <h1 className="heading1">CoinFlip</h1>
       <div id="coin">
         <div className={coin === "TAIL" ? "tail" : "head"}>
@@ -43,7 +21,7 @@ export const CoinFlip = () => {
       <button id="btn" onClick={coinFlip}>
         Flip Coin
       </button>
-      
+
     </Div>
   );
 };
