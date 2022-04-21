@@ -13,8 +13,8 @@ import { css } from '@emotion/react';
 export const HomePage = () => {
   return (
 
-    <div css={css({marginTop: '3%',})}>
-      <H1>Home Page</H1>
+    <div css={styles.myDiv}>
+      <h1 className="head1">Home Page</h1>
       <CoinFlip />
       {/* <hr /> */}
       <Random />
@@ -30,10 +30,22 @@ export const HomePage = () => {
   );
 };
 
-const H1 = styled.h1`
-/* background-color:green; */
-text-decoration: underline overline;
-text-decoration-color: rgba(255, 99, 71, 0.8);
-text-underline-position: under;
-color: rgba(60,60,60);
-margin-bottom: 40px;`
+const styles={
+  myDiv:css`
+    margin-top: 3%;
+    & .head1{
+      text-decoration: underline overline;
+      text-decoration-color: rgba(255, 99, 71, 0.8);
+      text-underline-position: under;
+      color: rgba(60,60,60);
+      margin-bottom: 40px;
+    }
+  `
+}
+// const H1 = styled.h1`
+// /* background-color:green; */
+// text-decoration: underline overline;
+// text-decoration-color: rgba(255, 99, 71, 0.8);
+// text-underline-position: under;
+// color: rgba(60,60,60);
+// margin-bottom: 40px;`
