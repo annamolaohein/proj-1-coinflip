@@ -1,19 +1,20 @@
 import React from 'react'
-import {BrowserRouter as Router, Route, Link, NavLink, Routes} from 'react-router-dom'
+import {BrowserRouter as Router, Route,Link, NavLink, Routes} from 'react-router-dom'
 import { CoinFlip } from "../component/CoinFlip";
 import { Random } from "../component/Random";
 import { CountApple } from "../component/CountApple";
 import { TextMirror } from "../component/TextMirror";
 import { NeatBirthdayList } from "../component/NeatBirthdayList";
 import { DisplayEditList } from "../component/DisplayEditList";
-import styled from '@emotion/styled'
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react';
 import { HomePage } from './HomePage';
 // import EmotionTest from '../component/EmotionTest';
 
-function Pages() {
+function Nav() {
   return (
    <Router>
-        <DIV>
+        <div css={styles.myDiv}>
             <Link exact to="/" className='home'>Home</Link>
             {/* <NavLink exact activeClassName='active' to='/emotion' className='home'>Emotion Test</NavLink> */}
             <NavLink exact activeClassName='active' to='/coin' className='home'>Coin Flip</NavLink>
@@ -33,21 +34,22 @@ function Pages() {
                 <Route exact path='/textMirror' element={<TextMirror/>}/>
                 <Route exact path='/neatBirthday' element={<NeatBirthdayList/>}/>
                 <Route exact path='/display' element={<DisplayEditList/>}/>
-             
-
             </Routes>
-
-        </DIV>
+        </div>
    </Router>
   )
 }
 
-export default Pages
+export default Nav
 
-const DIV = styled.div`
-padding-top: 10px;
-.home{
-    padding-right: 20px;
+const styles = {
+    myDiv: css`
+    padding-top: 10px;
+    & .home{
+        padding-right: 20px;
+    }
+    `,
+
 }
-`
+
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 // import "./CoinFlip.css";
-import styled from '@emotion/styled';
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react';
 
 export const Random = () => {
     const [minVal, setMinVal] = useState();
@@ -12,7 +13,7 @@ export const Random = () => {
     }
 
     return (
-        <Div className='RangeRandom'>
+        <div className='RangeRandom' css={styles.myDiv}>
             <div className='outer'>
                 <h1>Random in Range</h1>
                 <div className={`show_random ${(randomNum === minVal || randomNum === maxVal) && "bold-text"
@@ -43,43 +44,78 @@ export const Random = () => {
                     Generate Random Number</button>
             </div>
 
-        </Div>
+        </div>
     )
 }
+const styles={
+    myDiv: css`
+    width: 50%;
+    margin-left: 25%;
+    background: #66b9b9;
+    display: flex;
+    margin-top: 2%;
+    & .outer{
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    & .outer .bold-text {
+        font-weight: 800;
+    }
+    & .inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+        width: 100%;
+        & input{
+            padding: 8px;
+        }
+    }
+    & #btn{
+        padding: 5px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    `
+}
 
-const Div = styled.div`
-  width: 50%;
-  margin-left: 25%;
-  /* background: #e3eff3; */
-  background: #66b9b9;
-  display: flex;
-  margin-top: 2%;
+// const Div = styled.div`
+//   width: 50%;
+//   margin-left: 25%;
+//   /* background: #e3eff3; */
+//   background: #66b9b9;
+//   display: flex;
+//   margin-top: 2%;
  
- .outer{
-  width: 100%;
-  max-width: 400px;
-  margin: auto;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
- }
- .bold-text {
-  font-weight: 800;
- }
-  .inner {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 0;
-  width: 100%;
-  & input{
-    padding: 8px;
-}
-}
+//  .outer{
+//   width: 100%;
+//   max-width: 400px;
+//   margin: auto;
+//   padding: 30px;
+//   display: flex;
+//   flex-direction: column;
+//  }
+//  .bold-text {
+//   font-weight: 800;
+//  }
+//   .inner {
+//   display: flex;
+//   justify-content: space-between;
+//   padding: 30px 0;
+//   width: 100%;
+//   & input{
+//     padding: 8px;
+// }
+// }
 
-#btn{
-  padding: 5px;
-  font-weight: bold;
-  font-size: 15px;
-  cursor: pointer;
-}
-`
+// #btn{
+//   padding: 5px;
+//   font-weight: bold;
+//   font-size: 15px;
+//   cursor: pointer;
+// }
+// `

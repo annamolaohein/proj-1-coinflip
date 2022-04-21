@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 // import "./CountApple.css";
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
-import styled from '@emotion/styled';
+// import styled from '@emotion/styled';
 
 export const CountApple = () => {
 
@@ -22,22 +22,13 @@ export const CountApple = () => {
     }, [countApple])
 
     return (
-        <div css={css({
-            width: '350px',
-            height: 'auto',
-            backgroundColor: '#66b9b9',
-            color: 'black',
-            border: '1px solid white',
-            padding: 'auto',
-            margin: 'auto',
-            textAlign: 'center',
-            marginTop: '2%',
-        })}>
+        <div css={styles.myDiv}>
             <h1>Counting Apples</h1>
-            <Button
+            <button
+                className='btn'
                 onClick={() => setCountApple(countApple + generateRandom())}>
                 Add Some Apples
-            </Button>
+            </button>
             <div>
                 <p>🍎 Count: {countApple}</p>
                 <p>EVEN OR ODD? {evenOrOdd}</p>
@@ -47,6 +38,24 @@ export const CountApple = () => {
     )
 
 }
-const Button = styled.button`
-    margin-bottom: 20px;
-    padding: 10px 10px;`
+const styles = {
+    myDiv: css`
+        width: 350px;
+        height: auto;
+        background-color: #66b9b9;
+        color: black;
+        border: 1px solid white;
+        padding: auto;
+        margin: auto;
+        text-align: center;
+        margin-top: 2%;
+        & .btn{
+            margin-bottom: 20px;
+            padding: 10px 10px;
+            border-radius: 0.5rem;
+        }
+    `
+}
+// const Button = styled.button`
+//     margin-bottom: 20px;
+//     padding: 10px 10px;`

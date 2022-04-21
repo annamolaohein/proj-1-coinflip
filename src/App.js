@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 // import Home from "./pages/Home";
-import Pages from "./pages/Pages";
+import Nav from "./pages/Nav";
 // import { HomePage } from "./pages/HomePage";
 
 
@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <div className="App">
         {/* <HomePage /> */}
-        <Pages/>
+        <Nav/>
       </div>
 
 

@@ -1,6 +1,7 @@
 import { useState } from "react";
-// import "./CoinFlip.css";
-import styled from "@emotion/styled";
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react';
+
 
 export const CoinFlip = () => {
 
@@ -10,65 +11,86 @@ export const CoinFlip = () => {
     Math.floor(random % 2) === 0 ? setCoin("HEAD") : setCoin("TAIL");
   };
   return (
-    <Div className="CoinFlip">
+    <div>
 
-      <h1 className="heading1">CoinFlip</h1>
-      <div id="coin">
+      <h1 css={styles.heading1}>CoinFlip</h1>
+      <div id="coin" css={styles.myDiv}>
         <div className={coin === "TAIL" ? "tail" : "head"}>
           <h2 className="heading2">{coin}</h2>
         </div>
       </div>
-      <button id="btn" onClick={coinFlip}>
+      <button id="btn" onClick={coinFlip} css={styles.btn}>
         Flip Coin
       </button>
 
-    </Div>
+    </div>
   );
 };
-const Div = styled.div`
- #coin{
-   width: 100px;
+
+const styles = {
+  heading1: css`
+      color: darkcyan;
+  `,
+  myDiv: css`
+  width: 100px;
    height: 100px;
    margin: auto;
    position: relative;
- }
- .tail {
-   background-color: red;
-   text-align: center;
-   color: white;
- }
- .head {
-   background-color: green;
-   text-align: center;
-   color: white;
- }
- .heading1{
-  color: darkcyan;
-  /* @media (min-width: 420px) {
-        font-size: 50px;
-      } */
- }
- .heading2{
-  font-family: "Times New Roman", Times, serif;
- }
-  #btn{
-    color:darkblue;
-    padding: 10px 20px;
-    font-size: 0.5;
-    font-weight: bold;
-    &:hover{color: darkcyan;}
-  }
- `
-// const Button = styled.button`
-// color:darkblue;
-// padding: 10px 20px;
-// font-size: 0.5;
-// font-weight: bold;
-// &:hover{color: darkcyan;}`
+   & .tail{
+    background-color: red;
+    text-align: center;
+    color: white;
+   }
+   & .head{
+    background-color: green;
+    text-align: center;
+    color: white;
+   }
+   & .heading2{
+    font-family: "Times New Roman", Times, serif;
+   }
+  `,
+  btn: css`
+   color:darkblue;
+     padding: 10px 20px;
+     font-size: 0.5;
+     font-weight: bold;
+     &:hover{color: darkcyan;}
+  `
+}
+// const Div = styled.div`
+//  #coin{
+//    width: 100px;
+//    height: 100px;
+//    margin: auto;
+//    position: relative;
+//  }
+//  .tail {
+//    background-color: red;
+//    text-align: center;
+//    color: white;
+//  }
+//  .head {
+//    background-color: green;
+//    text-align: center;
+//    color: white;
+//  }
+//  .heading1{
+//   color: darkcyan;
+//   /* @media (min-width: 420px) {
+//         font-size: 50px;
+//       } */
+//  }
+//  .heading2{
+//   font-family: "Times New Roman", Times, serif;
+//  }
+//   #btn{
+//     color:darkblue;
+//     padding: 10px 20px;
+//     font-size: 0.5;
+//     font-weight: bold;
+//     &:hover{color: darkcyan;}
+//   }
+//  `
 
-// const H1 = styled.h1`
-// color: darkcyan;`
-
-// const H2 = styled.h2`
-//  font-family: "Times New Roman", Times, serif;`
 
